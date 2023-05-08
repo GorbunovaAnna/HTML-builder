@@ -23,21 +23,3 @@ fsPromises
       }
     });
   });
-// join into files
-//   .then(() => {
-//     fsPromises
-//       .readdir(folderPath, {
-//         withFileTypes: true,
-//       })
-//       .then((res) => {
-//         res.forEach((el) => {
-//           const filePath = path.join(folderPath, el.name);
-//           fsPromises.readFile(filePath).then((file) => {
-//             fsPromises.writeFile(
-//               path.join(__dirname, "copy-files", el.name),
-//               file
-//             );
-//           });
-//         });
-//       });
-//   });
